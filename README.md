@@ -1,4 +1,4 @@
-# `python-social-media`
+# `python-socialmedia`
 
 Demo very very simple social media application with Python and Django :)
 

@@ -80,6 +80,16 @@ RABBITMQ_PASSWORD=guest
 RABBITMQ_VIRTUAL_HOST=/
 ```
 
+## Local Test By Example
+
+1. create user 1, 2
+2. get access token by each user
+3. create chatroom
+4. join chatroom by each user
+5. open each websocket by each user (`ws://localhost:8001/ws/users/{user_id}/chatrooms/{chatroom_id}`)
+6. create message by user no.2
+7. check websocket result
+
 ## Dependencies
 
 1. Django

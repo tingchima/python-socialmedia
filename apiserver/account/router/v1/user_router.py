@@ -27,6 +27,5 @@ def user_create(request, body: UserCreateBody):
         )
         user = user_service.user_create(param=user_param)
     except Exception as e:
-        print(f"error={e}")
         raise e
     return to_response(201, UserCreateReponse.build(user))

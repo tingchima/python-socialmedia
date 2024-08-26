@@ -65,7 +65,6 @@ class ChatroomCreateResponse(Schema):
 
     @classmethod
     def build(cls, room: ChatroomEntity) -> dict:
-        print(f"room={room}")
         return cls(
             room=Chatroom(
                 room_id=room.id,

@@ -19,9 +19,3 @@ class PikaPublisher:
 
     def on_open_callback(self, _unused_connection):
         print("on_open_callback")
-
-
-# amqp_url = "amqp://guest:guest@localhost:5672/"
-# publisher = PikaPublisher(amqp_url=amqp_url)
-# conn = publisher.connect()
-# print(f"amqp_conn={conn}")

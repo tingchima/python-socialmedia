@@ -100,7 +100,7 @@ RABBITMQ_VIRTUAL_HOST=/
 6. PyJWT
 7. RabbitMQ
 8. Pika
-9. 
+
 ## Todo list in future
 
 1. Insert message delata data to search engine database(e.g Elasticsearch) with CDC concept.

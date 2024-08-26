@@ -39,6 +39,6 @@ chatroom_service: ChatroomService = ChatroomService()
 
 message_service: MessageService = MessageService(
     chatroom_service=chatroom_service,
-    message_repo=None,
-    message_event_broker=None,
+    message_repo=message_repo,
+    message_event_broker=message_event_broker,
 )

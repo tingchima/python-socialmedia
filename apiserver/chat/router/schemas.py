@@ -39,7 +39,7 @@ class ChatroomListResponse(Schema):
                     room_id=room.id,
                     room_name=room.room_name,
                     room_type=room.room_type,
-                    last_message_timestamp=room.last_message_timestamp,
+                    last_message_timestamp=int(room.last_message_timestamp or 0),
                     avatar_url=room.avatar_url,
                     created_at=room.created_at,
                     updated_at=room.updated_at,
@@ -100,6 +100,7 @@ class ChatroomGetResposne(Schema):
                 avatar_url=room.avatar_url,
                 created_at=room.created_at,
                 updated_at=room.updated_at,
+                last_message_timestamp=int(room.last_message_timestamp or 0),
             )
         ).model_dump()
 

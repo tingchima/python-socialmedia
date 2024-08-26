@@ -1,0 +1,16 @@
+# env
+# **/.env*
+.env
+
+# Local docker data
+data
+
+# Virtual env
+.venv
+venv/
+
+# Byte-compiled
+__pycache__/
+
+# Unit test
+.pytest_cache/

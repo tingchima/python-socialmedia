@@ -6,7 +6,7 @@ Demo very very simple social media application with Python and Django :)
 
 1. Settings reference from [Django-Styleguide](https://github.com/HackSoftware/Django-Styleguide?tab=readme-ov-file#settings)
 
-## Feature
+## API Server Feature
 
 1. user create
 2. chatroom create
@@ -17,16 +17,10 @@ Demo very very simple social media application with Python and Django :)
 7. messages of room
 8. message delete
 
-## Dependencies
+## Websocket Server Gateway
 
-1. Django
-2. Django-ninja
-3. channels
-4. Mysql
-5. DynamoDB
-6. PyJWT
-7. RabbitMQ
-8. Pika
+1. Consume message from API server with rabbitmq.
+
 
 ## Local setup
 
@@ -86,6 +80,17 @@ RABBITMQ_PASSWORD=guest
 RABBITMQ_VIRTUAL_HOST=/
 ```
 
+## Dependencies
+
+1. Django
+2. Django-ninja
+3. channels
+4. Mysql
+5. DynamoDB
+6. PyJWT
+7. RabbitMQ
+8. Pika
+9. 
 ## Todo list in future
 
 1. Insert message delata data to search engine database(e.g Elasticsearch) with CDC concept.
